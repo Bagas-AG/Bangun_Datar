@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jajar Genjang</title>
+    <link rel="icon" href="/aset/jjr.png" type="image/png">
+    <link rel="stylesheet" href="JG.css">
+</head>
+
+<body>
+    <a href="/index.html">
+        <span class="text-sm font-medium "> Home</span>
+      </a>
+    <form>
+        <h1>Jajar Genjang</h1>
+
+        <input type="radio" id="HitungKeliling" name="hitung" onclick="saklar()">
+        <label for="HitungKeliling">Hitung Keliling</label><br>
+        <input type="radio" id="HitungLuas" name="hitung" onclick="saklar()">
+        <label for="HitungLuas">Hitung Luas</label><br>
+        <h1></h1>
+
+        <div id="kelilingInputs"style="display: none;">
+            <label id="lLabel" for="textBox1">Sisi a:</label><br>
+            <input type="number" id="textBox1"><br>
+            <label id="lLabel" for="textBox2">Sisi b:</label><br>
+            <input type="number" id="textBox2"><br>
+            <label id="lLabel" for="textBox3">Sisi c:</label><br>
+            <input type="number" id="textBox3"><br>
+            <label id="lLabel" for="textBox4">Sisi d:</label><br>
+            <input type="number" id="textBox4"><br>
+
+        </div>
+
+        <div id="luasInputs" style="display: none;"><!--Untuk menghilangkan input diagonal-->
+            <label id="lLabel">Alas:</label><br>
+            <input type="number" id="Diagonal1"><br>
+            <label id="lLabel">Tinggi:</label><br>
+            <input type="number" id="Diagonal2"><br>
+        </div>
+
+        
+
+        <button type="button" onclick="hitungg()">Hitung</button>
+        <p id="result1"></p>
+
+    </form>
+
+
+    <script src="JG.js"></script>
+</body>
+
+</html>

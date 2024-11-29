@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segitiga Siku-Siku</title>
+    <link rel="icon" href="/aset/triangle.png" type="image/png">
+    <link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+    <a href="/index.html">
+        <span class="text-sm font-medium text-decoration: none"> Home</span>
+      </a>
+    <a href="/segitiga.html">
+        <span class="text-sm font-medium text-decoration: none"> Back</span>
+      </a>
+
+    <form>
+        <h1>Segitiga Siku-Siku</h1>
+
+        <input type="radio" id="HitungKeliling" name="hitung" onclick="saklar()">
+        <label for="HitungKeliling">Hitung Keliling</label><br>
+        <input type="radio" id="HitungLuas" name="hitung" onclick="saklar()">
+        <label for="HitungLuas">Hitung Luas</label><br>
+        <input type="radio" id="HitungSM" name="hitung" onclick="saklar()">
+        <label for="HitungSM">Hitung Sisi Miring</label><br>
+        <h1></h1>
+
+        <div id="kelilingInputs" style="display: none;">
+            <label id="lLabel" for="textBox1">alas:</label><br>
+            <input type="number" id="textBox1"><br>
+            <label id="lLabel" for="textBox2">tinggi:</label><br>
+            <input type="number" id="textBox2"><br>
+            <label id="lLabel" for="textBox3">miring:</label><br>
+            <input type="number" id="textBox3"><br>
+
+        </div>
+
+        <div id="luasInputs" style="display: none;">
+          <label id="lLabel" for="textBox4">alas:</label><br>
+          <input type="number" id="textBox4"><br>
+          <label id="lLabel" for="textBox5">tinggi:</label><br>
+          <input type="number" id="textBox5"><br>
+        </div>
+
+        <div id="SM" style="display: none;">
+          <label id="lLabel" for="textBox6">alas:</label><br>
+            <input type="number" id="textBox6"><br>
+            <label id="lLabel" for="textBox7">tinggi:</label><br>
+            <input type="number" id="textBox7"><br>
+        </div>
+
+        
+
+        <button type="button" onclick="hitungg()">Hitung</button>
+        <p id="result1"></p>
+
+    </form>
+
+
+    <script src="s.js"></script>
+</body>
+
+</html>
